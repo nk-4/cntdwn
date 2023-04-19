@@ -23,7 +23,7 @@
   body {
     color: #ffffff;
     background-image: url("university.jpg");
-    background-size: auto; width: 300px;
+    background-size:cover;
   }
   
   .flip-card {
@@ -90,6 +90,7 @@
   }
   
   .container {
+    backdrop-filter: opacity(85%);
     display: flex;
     gap: .5em;
     justify-content: center;
@@ -118,6 +119,7 @@
   
   .segment-title {
     font-size: 1rem;
+    color: white;
   }
 
   .timeline {
