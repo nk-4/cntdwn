@@ -22,6 +22,8 @@
   
   body {
     color: #ffffff;
+    background-image: url("university.jpg");
+    background-size: auto; width: 300px;
   }
   
   .flip-card {
