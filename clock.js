@@ -1,4 +1,4 @@
-const countToDate = new Date("2023-04-20T05:30:00Z").getTime()
+const countToDate = new Date("2023-04-19T05:30:00Z").getTime()
 let previousTimeBetweenDates
 setInterval(() => {
   const currentDate = new Date()
@@ -8,10 +8,23 @@ setInterval(() => {
   previousTimeBetweenDates = timeBetweenDates
 }, 250)
 
+const cnt1 = document.getElementById("cnt")
+const hrs1 = document.getElementById("hrs");
+const min1 = document.getElementById("min");
+const sec1 = document.getElementById("sec");
+
+
 function flipAllCards(time) {
   const seconds = time % 60
   const minutes = Math.floor(time / 60) % 60
   const hours = Math.floor(time / 3600)
+  if (hours <= 0){
+    hrs1.style.display = 'none';
+  if (minutes <= 0){
+    min1.style.display = 'none';
+  if (seconds <= 0){
+    cnt1.innerText = 'Time is up !';
+  }}}
 
   flip(document.querySelector("[data-hours-tens]"), Math.floor(hours / 10))
   flip(document.querySelector("[data-hours-ones]"), hours % 10)

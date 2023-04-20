@@ -101,13 +101,14 @@
     position: fixed;
     font-weight: 600;
     font-size: 132px;
-    color: #1E4276;
+    color: white;
     cursor: none;
   }
   
   .container-segment {
     display: flex;
     flex-direction: column;
+    color: #1E4276;
     gap: .1em;
     align-items: center;
   }
@@ -129,40 +130,24 @@
     background-color: white;
     margin: 50px auto;
     overflow: hidden;
-  }
-  
-  .progress {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: white;
-    background-size: 200% 100%;
-    transition: background-position 0.5s ease-out;
-  }
-  
-  .handle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    backdrop-filter: opacity(85%);
     display: flex;
-    align-items: center;
-  }
-  
-  
-  
-
-  .timeline {
+    gap: .5em;
+    justify-content: center;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: fixed;
-    height: 100px;
-    background-color: white;
-    margin: 50px auto;
-    overflow: hidden;
+    font-weight: 600;
+    font-size: 132px;
+    color: #1E4276;
+    cursor: none;
   }
   
   .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background: linear-gradient(to right, blue 0%, blue 50%, white 50%, white 100%);
@@ -178,35 +163,4 @@
     display: flex;
     align-items: center;
   }
-  
-  .milestone {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: blue;
-    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
-    margin-left: calc(33.33% - 25px);
-    transition: transform 0.2s ease-out;
-  }
-  
-  .milestone1 {
-    background-image: url(milestone1.jpg);
-    background-size: cover;
-  }
-  
-  .milestone2 {
-    background-image: url(milestone2.jpg);
-    background-size: cover;
-  }
-  
-  .milestone3 {
-    background-image: url(milestone3.jpg);
-    background-size: cover;
-  }
-  
-  .timeline:hover .milestone {
-    transform: scale(1.2);
-  }
-    
   
