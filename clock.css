@@ -22,7 +22,7 @@
   
   body {
     color: #ffffff;
-    background-video: url("backvideo.mp4");
+    background-url: url("backvideo.mp4");
     background-size:cover;
   }
   
